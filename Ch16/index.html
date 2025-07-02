@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* This has specificity 1 */
+        h1{
+            color: cadetblue;
+        }
+        /* This has specificity 10 */
+        .yellow{
+            color: yellow !important ;
+        }
+        /* This has specificity 1+10=11 */
+        h1.cred{
+            color: red;
+        }
+        /* This has specificity 10 */
+        .cpurple{
+            color: purple;
+        }
+        /* This is an example of attribute selector of specificity 10 */
+        [data-x="a"]{
+            background-color: burlywood;
+            color: blue;
+        }
+    </style>
 </head>
 <body>
+    <div>
+        <h1 style="color: fuchsia;" class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
     
 </body>
 </html>
