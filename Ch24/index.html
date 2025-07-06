@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            background-color: cornsilk;
+        }
+
+        /* @media not|only mediatype and (expressions){
+            CSS code;
+            } */
+             
+        @media screen and (orientation:landscape){
+            body{
+                border: 2px solid black;
+            }
+        }
+
+        @media only screen and (max-width: 455px){
+            body{
+                background-color: deepskyblue;
+            }
+        }
+        .boxes{
+            display: flex;
+            flex-direction: column;
+        }
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: blueviolet;
+            margin: 3px;
+            padding: 3px;
+
+        }
+    </style>
+</head>
+<body>
+    <div>Hey I am a Cornsilk body</div>
+    <div class="boxes">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    </div>
+</body>
+</html>
