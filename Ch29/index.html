@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transforms</title>
+    <style>
+        .box{
+            height: 50px;
+            width: 50px;
+            background-color: beige;
+            border: 2px solid black;
+            /* transform: rotate(45deg); */
+            transform: rotate(0.125turn);
+            /* transform: rotateY(40deg); */
+            /* transform: scale(1.6); */
+            /* transform: skew(5deg); */
+            /* NOW THE MOST USED: TRANSLATE */
+            /* transform: translate(35px) skew(40deg)
+            rotate(20deg); */
+            
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 100vw;
+            height: 80vh;
+            border: 2px solid purple;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+    </div>
+</body>
+</html>
