@@ -1,11 +1,74 @@
+<!-- Card.png is a file that contains a card image. Write html and css code to design this card. -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS Card Design</title>
+    <style>
+        body{
+            background-color:gray;
+        }
+        .card{
+            background-color: white;
+            width: 415px;
+            height: 650px;
+            border-radius: 10px;
+        }
+        .image{
+            padding: 5px;
+            
+        }
+        .image img{
+             border-radius: 10px;
+        }
+        .tags{
+            padding-left: 30px;
+        }
+        .tags span{
+            background-color: rgb(218, 214, 214);
+            border-radius: 15px;
+            font-size: 15px;
+            padding-inline: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+        .Button{
+            text-align: center;
+            padding: 30px;
+        }
+        .Button button{
+            border-radius: 20px;
+            background-color: lightblue;
+            color: rgb(28, 28, 126);
+            padding: 5px;
+            padding-inline: 20px;
+            border: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <!-- Card.png is a file that contains a card image. Write html and css code to design this card. -->
+    <div class="card">
+        <div class="image">
+            <img width="405" height="300" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkoBahrNeJTALNOD3v3I44Dz4QAURBEBqA_w&s" alt="">
+        </div>
+        <div class="tags">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+        <div>
+            <h1>Lago Di Bries</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab adipisci ipsum sapiente, incidunt blanditiis cupiditate inventore deserunt voluptates laudantium ipsam earum autem unde non quae, odit eveniet. Ullam cupiditate cumque dolorem dolor, odit accusamus. Voluptatum consequatur asperiores iure illum, necessitatibus tenetur minima temporibus culpa qui!</p>
+        </div>
+        <div class="Button">
+            <button>Read more</button>
+        </div>
+    </div>
 </body>
 </html>
